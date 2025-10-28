@@ -201,7 +201,70 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Claude Code
+#  Claude Code configuration and documentation files
+.claude/
+CLAUDE.md
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Data Science & ML specific
+# Large data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.hdf5
+*.h5
+
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pb
+*.tflite
+models/
+checkpoints/
+saved_models/
+
+# Trained weights
+weights/
+*.weights
+*.caffemodel
+
+# TensorBoard logs
+runs/
+logs/
+tensorboard/
+
+# MLflow
+mlruns/
+mlflow/
+
+# Weights & Biases
+wandb/
+
+# DVC (Data Version Control)
+.dvc
+
+# Dataset caches
+.cache/
+*.cache
+
+# Annotations and labels (if large)
+annotations/
+labels/
+
+# Outputs and results
+outputs/
+results/
+predictions/
+experiments/

@@ -1,0 +1,20 @@
+# Development Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# First install base requirements
+-r requirements.txt
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+
+# Code Quality
+black>=23.7.0
+ruff>=0.0.280
+mypy>=1.5.0
+pre-commit>=3.3.0
+
+# Type Stubs
+pandas-stubs>=2.0.0
+types-tqdm>=4.65.0
