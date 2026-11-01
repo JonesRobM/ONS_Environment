@@ -1,24 +1,54 @@
-# ONS Employment Analysis
+# ONS Environmental Emissions Analysis
 
-A data science and machine learning project for analyzing ONS (Office for National Statistics) employment data using PyTorch for deep learning and scikit-learn for traditional machine learning approaches.
+A comprehensive data science and machine learning project for analyzing and interpreting UK atmospheric emissions and environmental pollutant data from ONS (Office for National Statistics). This project combines exploratory data analysis, statistical methods, and machine learning techniques to understand environmental trends, patterns, and impacts.
 
 ## Features
 
-- Deep learning models using PyTorch
-- Traditional ML algorithms using scikit-learn
-- Comprehensive data analysis and visualization
-- Jupyter notebook-based exploratory analysis
-- Support for XGBoost and LightGBM gradient boosting
+- **Environmental Data Analysis**: Comprehensive analysis of 4 ONS atmospheric emissions datasets
+- **Exploratory Analysis**: Interactive Jupyter notebooks for data exploration and visualization
+- **Machine Learning**: Both shallow learning (scikit-learn, XGBoost, LightGBM) and deep learning (PyTorch) approaches
+- **Time Series Analysis**: Forecasting and trend analysis for emissions data
+- **Educational Examples**: Well-documented tutorials demonstrating analytical techniques
+- **Visualization**: Publication-quality plots and interactive dashboards
+
+## Datasets
+
+The project analyzes four ONS atmospheric emissions datasets:
+
+1. **Greenhouse Gas (GHG) Emissions** (8.4MB)
+   - CO2, methane, nitrous oxide, fluorinated gases
+   - Sector-specific emissions data
+
+2. **Other Atmospheric Pollutants** (6.4MB)
+   - Particulate matter, VOCs, heavy metals
+   - Persistent organic pollutants
+
+3. **Acid Rain Precursors** (4.3MB)
+   - SO2, NOx, NH3 emissions
+   - Agricultural, industrial, and transport sectors
+
+4. **GHG Emissions Intensity** (2.1MB)
+   - Emissions per unit of economic activity
+   - Efficiency and decarbonization metrics
 
 ## Project Structure
 
 ```
 ONS_Employment/
-├── data/                  # Data files (not tracked in git)
-├── notebooks/             # Jupyter notebooks for analysis
-├── scripts/               # Python scripts
-├── src/                   # Source code
+├── data/                  # Environmental emissions datasets (not tracked in git)
+│   ├── provisionalatmoshpericemissionsghg.xlsx
+│   ├── provisionalatmosphericemissionsotherpollutants.xlsx
+│   ├── provisinalatmosphericemissionsacidrainprecursors.xlsx
+│   └── provatmosphericemissionsghgintensity.xlsx
+├── notebooks/             # Jupyter notebooks for exploratory analysis
+├── scripts/               # Python scripts for data processing and analysis
+├── src/                   # Source code modules
+│   ├── data/              # Data loading and preprocessing
+│   ├── models/            # ML models (shallow and deep learning)
+│   ├── utils/             # Utility functions
+│   └── visualization/     # Plotting and visualization tools
 ├── tests/                 # Unit tests
+├── .claude/               # Claude Code configuration and agents
 ├── pyproject.toml         # Project configuration
 └── requirements.txt       # Python dependencies
 ```
